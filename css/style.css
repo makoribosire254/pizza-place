@@ -2,6 +2,26 @@
     box-sizing: border-box;
 }
 
+.jumbotron-fluid{
+    text-align: center;
+    background-color: gray;
+    color:peru;
+}
+.row{
+    margin-left: 15px;
+}
+.row input[type=text]{
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+.row input[type=text]:hover{
+    cursor: pointer;
+    background-color:darkgray;
+}
+
 html {
 	margin:0;
 	padding:0;
@@ -140,3 +160,14 @@ h1 {
 .totalName, #totalPrice {
 	font-size:1.5rem;
 }
+.footer {
+    padding-top: 15px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:50px;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+  }
