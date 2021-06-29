@@ -203,7 +203,7 @@
 					<div class="card-header" id="headingFour">
 						<h5 class="mb-0">
 							<button id="meatBtn" class="btn btn-block card-button collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-							Meats
+							Toppings
 							</button>
 						</h5>
 					</div>
@@ -348,6 +348,79 @@
 					</div>
 				</div>
 			</div>
+            <!-- error messages -->
+			<div class="alert alert-danger" id="orderErrorMsg" role="alert">
+				<p></p>
+			</div>
+
+			<!-- submit button -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-4">
+						<button type="submit" class="btn btn-primary btn-lg" id="calcBtn" value="Submit">Calculate Your Order</button>
+					</div>
+					<div class="col-md-4">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- order total -->
+	<div class="wrapper order-total">
+		<!-- Modal -->
+		<div class="modal fade" id="orderTotalModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title text-center" id="exampleModalLongTitle">Your Order</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row">
+							<div class="itemName"></div><div class="itemPrice"></div>
+						</div>
+						<div class="row border-top">
+							<div class="totalName text-right">Total</div><div id="totalPrice"></div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS links -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- include JavaScript file -->
+	<script src="scrpt.js"></script>		
+
+	</body>
+</html> 
 
 </body>
 </html>
